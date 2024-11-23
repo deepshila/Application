@@ -1,0 +1,23 @@
+{
+    "transactions": [
+      {
+        "id": 1,
+        "createdDate": "2024-11-01",
+        "lastModifiedDate": "2024-11-10",
+        "description": "Grocery Shopping",
+        "amount": 100.5,
+        "remarks": "Paid via Credit Card",
+        "status": "Completed"
+      },
+      {
+        "id": 2,
+        "createdDate": "2024-11-15",
+        "lastModifiedDate": "2024-11-17",
+        "description": "Electricity Bill",
+        "amount": 75.0,
+        "remarks": "Paid via Bank Transfer",
+        "status": "Pending"
+      }
+    ]
+  }
+  

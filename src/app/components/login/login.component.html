@@ -1,0 +1,27 @@
+<div class="login-page">
+  <div class="login-container">
+    <h2>Login</h2>
+    <!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()"> -->
+    <form>
+      <div class="mt-4">
+        <input id="username" formControlName="username" type="text" placeholder="username" />
+        <div *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched">
+          Username is required
+        </div>
+      </div>
+      <div class="mt-3">
+        <input id="password" formControlName="password" type="password" placeholder="password"/>
+        <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+          Password is required
+        </div>
+        
+      </div>
+      <div class="mt-5 d-flex justify-content-center">
+        <button  type="submit" routerLink="/add-transaction">Login</button>
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+  

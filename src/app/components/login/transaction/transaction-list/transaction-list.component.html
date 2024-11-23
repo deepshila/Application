@@ -1,0 +1,40 @@
+<div class="page-wrapper p-4">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <h4>Transaction List</h4>
+      <button class="btn btn-success" routerLink="/add-transaction">Add Transaction</button>
+    </div>
+    
+    <div class="wrapper">
+      <table class="table bg-transparent" *ngIf="transactions && transactions.length > 0; else noData">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Created Date</th>
+            <th>Last Modified Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let transaction of transactions; let i = index">
+              <td>{{ transaction.id }}</td>
+              <td>{{ transaction.createdDate }}</td>
+              <td>{{ transaction.lastModifiedDate }}</td>
+              <td>{{ transaction.description }}</td>
+              <td>{{ transaction.amount }}</td>
+              <td>{{ transaction.status }}</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <ng-template #noData>
+        <div class="text-center mt-4">
+          <p>No data available.</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
+  

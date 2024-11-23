@@ -1,0 +1,49 @@
+.login-page{
+  background-image: url('../../../assets/login-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  overflow: hidden;
+
+
+  .login-container {
+    max-width: 400px;
+    margin: 5rem;
+    padding: 1rem;
+
+    h2 {
+      // text-align: center;
+      color: #fff;
+    }
+  
+  }
+
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #ffffff1f;
+    border: none;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(22px);
+    filter: drop-shadow(1px 1px 0 #efefef);
+  }
+  
+  button {
+    background-color: transparent;
+    width: 40%;
+    border: 1px solid;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+}
+
+  
+
+
+
+  
